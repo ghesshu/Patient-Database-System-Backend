@@ -1,0 +1,13 @@
+namespace AxonPDS.DTOs.MedicineRecord;
+
+public record class CreateMedicineRecordDto
+{
+    public Guid RecordId { get; set; }
+
+    public Guid MedicineID {get; set;}
+
+    public string Instruction { get; set; } = string.Empty;
+
+    public string Quantity { get; set; } = string.Empty;
+
+}
